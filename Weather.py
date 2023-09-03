@@ -40,7 +40,7 @@ def showWeather():
         sunrise_time = time_format_for_location(sunrise + timezone)
         sunset_time = time_format_for_location(sunset + timezone)
 
-        weather = f"\nCurrent weather in {city_name}:\nTemperature (Farenheit): {temp}°\nFeels like (Farenheit): {feels_like_temp}°\nPressure: {pressure} hPa\nHumidity: {humidity}%\nSunrise at {sunrise_time} and Sunset at {sunset_time}\nCloud: {cloudy}%\nInfor: {desc}"
+        weather = f"\nCurrent weather in {city_name}:\nTemperature (Farenheit): {temp}°\nFeels like (Farenheit): {feels_like_temp}°\nPressure: {pressure} hPa\nHumidity: {humidity}%\nSunrise at {sunrise_time} and Sunset at {sunset_time}\nCloud: {cloudy}%\nInfo: {desc}"
     else: 
         weather = f"\n\tWeather for '{city_name}' not found!\n\tPlease enter a valid city name."
 
