@@ -29,7 +29,6 @@ def getWeather():
     #weather
     url="http://api.openweathermap.org/data/2.8/onecall?lat="+str(location.latitude)+"&lon="+str(location.longitude)+"&units=imperial&exclude=hourly&appid=6b08f1018c3408c190f43c0e50e025c9"
     json_data=requests.get(url).json()
-    print(json_data)
 
     #current
     temp = round(json_data['current']['temp'])
